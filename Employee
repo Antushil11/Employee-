@@ -1,0 +1,41 @@
+package datatype;
+
+public class Employee {
+	String Name;
+	int ID;
+	int Salary;
+	public Employee() {
+		
+	}
+	public Employee(String Name,int ID) {
+		this.Name=Name;
+		this.ID=ID;
+		
+	}
+	public Employee (String Name, int ID,int Salary) {
+		this.Name=Name;
+		this.ID=ID;
+		this.Salary=Salary;
+		
+		
+	}
+	void displayInfo() {
+		System.out.println("Employee Name is :"+Name);
+		System.out.println("Employee ID :"+ID);
+		
+		System.out.println("Salary : " +Salary);
+		System.out.println("\n\n");
+		
+	}
+	public static void main(String[] args) {
+		Employee Emp1 = new Employee();
+		Employee Emp2 = new Employee("Sami",1072);
+		Employee Emp3 = new Employee("Nazrul",1070,20000);
+		Employee Emp4 = new Employee("Sir",1055,10000);
+		
+		Emp1.displayInfo();
+		Emp2.displayInfo();
+		Emp3.displayInfo();
+}
+
+}
